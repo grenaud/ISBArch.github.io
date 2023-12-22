@@ -27,7 +27,7 @@ Many tools, programs, pipelines, and software suites are used in the analysis of
 - [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) aligns DNA sequences to a reference sequence
 
 **DNA sequence assembly**
-- [MEGAHIT](https://www.metagenomics.wiki/tools/assembly/megahit) assembles DNA sequences from mixed sources into contigs (contiguous stretches of DNA); compatibile with ancient DNA
+- [MEGAHIT](https://www.metagenomics.wiki/tools/assembly/megahit) assembles DNA sequences from mixed sources into contigs (contiguous stretches of DNA); compatible with ancient DNA
 - [metaSpades](http://bioinf.spbau.ru/en/spades3.7) assembles DNA sequences from mixed sources into contigs
 
 **Ancient DNA damage**
@@ -39,27 +39,28 @@ Many tools, programs, pipelines, and software suites are used in the analysis of
 **Variant calling and genotyping**
 - [ANGSD](https://github.com/ANGSD/angsd) (Analysis of Next Generation Sequencing Data) is a multipurpose genetic data analysis tool that can be used for genotyping. 
 - [GATK](https://software.broadinstitute.org/gatk/) is a software toolkit used to perform variant calling and genotyping. It can be used to estimate genotype likelihoods for phenotype-associated SNPs from ancient individuals
-- [pileupCaller](https://github.com/stschiff/sequenceTools) is a tool used to sample alleles from low coverage data
+- [pileupCaller](https://github.com/stschiff/sequenceTools) is a tool used to sample alleles from low-coverage data
 
 **Sex, kinship, and contamination**
 - [ry_compute](https://github.com/pontussk/ry_compute/blob/master/ry_compute.py) is a tool that estimates genetic sex from high-throughput DNA sequence data
 - [lcMLkin](https://github.com/COMBINE-lab/maximum-likelihood-relatedness-estimation) (Maximum Likelihood Estimation of Relatedness) uses genotype likelihoods to infer genetic relatedness from low coverage sequencing data 
-- [READ](https://bitbucket.org/tguenther/read) (Relationship Estimation from Ancient DNA) estimates genetic kinship between a pair of individuals represented by low coverage sequencing data 
+- [READ](https://bitbucket.org/tguenther/read) (Relationship Estimation from Ancient DNA) estimates genetic kinship between a pair of individuals represented by low-coverage sequencing data 
 - [ANGSD](https://github.com/ANGSD/angsd) (Analysis of Next Generation Sequencing Data) is a multipurpose genetic data analysis tool; its contamination module can be used to estimate nuclear contamination in males
 - [Schmutzi](https://github.com/grenaud/schmutzi) performs mitochondrial consensus calling and estimates mitochondrial contamination for ancient DNA
 - [SourceTracker2](https://github.com/biota/sourcetracker2) estimates source contributions to a metagenomic sample and can be used to identify environmental contaminants in mixed microbial communities, such as dental calculus and paleofeces 
 - [SourcePredict](https://github.com/maxibor/sourcepredict) classifies and predicts the origin of metagenomic samples given a reference dataset of known origins using machine learning classification on dimensionally reduced datasets
-- [Decontam](https://benjjneb.github.io/decontam/vignettes/decontam_intro.html) identifes contaminant sequences in a sample based on sequences identified in blanks and controls
-- [AuthentiCT](https://github.com/StephanePeyregne/AuthentiCT): Provides an estimate of proportion of present-day DNA contamination in ancient DNA datasets using deamination patterns.
+- [Decontam](https://benjjneb.github.io/decontam/vignettes/decontam_intro.html) identifies contaminant sequences in a sample based on sequences identified in blanks and controls
+- [AuthentiCT](https://github.com/StephanePeyregne/AuthentiCT): Provides an estimate of the proportion of present-day DNA contamination in ancient DNA datasets using deamination patterns.
 - [KIN](https://github.com/DivyaratanPopli/Kinship_Inference): Estimates genetic relatedness from ancient DNA data along with locations of IBD sharing and long runs of homozygosity
 
 **Ancestry and admixture**
-- [ADMIXTURE](http://www.genetics.ucla.edu/software/admixture/) estimates individual ancestries from SNP datasets  
+- [ADMIXTURE](http://www.genetics.ucla.edu/software/admixture/) estimates individual ancestries from SNP datasets
+- [HaploCart](https://github.com/grenaud/vgan) infers human mitochondrial haplogroup from FASTA consensus or FASTQ using mitochondrial pangenomes, robust to low-coverage and missing data.
 - [Haplogrep2](http://haplogrep.uibk.ac.at) classifies mitochondrial haplogroups using SNP datasets 
 - [Haplofind](https://haplofind.unibo.it) assigns mitochondrial haplogroups using DNA sequence data
 - [yHaplo](https://github.com/23andMe/yhaplo) estimates the Y-haplogroup of males from SNP datasets
 - [smartPCA](https://github.com/chrchang/eigensoft/blob/master/POPGEN/README) is a program within the EIGENSOFT software package that can be used to perform principal components analysis (PCA) on genetic data from ancient populations
-- [AdmixTools](https://github.com/DReichLab/AdmixTools/blob/master/README.QpWave) is a toolkit for infering admixture. It is used to calculate f3-, f4-, and D-statistics, and it includes the programs qpGraph, qpAdm, qp3pop, and qp3Dstat- 
+- [AdmixTools](https://github.com/DReichLab/AdmixTools/blob/master/README.QpWave) is a toolkit for inferring admixture. It is used to calculate f3-, f4-, and D-statistics, and it includes the programs qpGraph, qpAdm, qp3pop, and qp3Dstat- 
 - [TreeMix](https://bitbucket.org/nygcresearch/treemix/wiki/Home) is used to infer patterns of population splits and mixtures in the history of a set of populations 
 
 **Epigenetics**
@@ -73,13 +74,14 @@ Many tools, programs, pipelines, and software suites are used in the analysis of
 - [Bayesian Serial SimCoal](http://web.stanford.edu/group/hadlylab/ssc/) (BayeSSC) is a modification of SimCoal that allows flexible coalescent modelling from different priors; it can incorporate ancient datasets to estimate the timing and magnitude of past demographic events
 - [PSMC](https://github.com/lh3/psmc) (Pairwise Sequentially Markovian Coalescent) infers population size history from a diploid genome
 - [MSMC](https://github.com/stschiff/msmc) (Multiple Sequentially Markovian Coalescent) infers population size history and gene flow from multiple genomes
-- [RAxML](https://sco.h-its.org/exelixis/software.html)  (Randomized Axelerated Maximum Likelihood) infers phylogeny for large datasets using maximum likelihood
+- [RAxML](https://sco.h-its.org/exelixis/software.html)  (Randomized Accelerated Maximum Likelihood) infers phylogeny for large datasets using maximum likelihood
 - [GenErode](https://github.com/NBISweden/GenErode) a bioinformatics pipeline for investigating genome erosion in endangered and extinct species
 
 **Species identification and metagenomics**
 - [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi)  (Basic Local Alignment Tool) identifies regions of similarity between a query sequence and reference database
+- [euka](https://github.com/grenaud/vgan) infers eukaryotic clades that are present in modern and ancient environmental DNA as well as proportions using mitochondrial pangenomes.
 - [DIAMOND](http://ab.inf.uni-tuebingen.de/software/diamond/) is an ultrafast DNA aligner that aligns translated DNA sequences to a protein sequence database
-- [MALT](http://ab.inf.uni-tuebingen.de/software/malt/) (MEGAN ALignment Tool) rapidly aligns DNA sequences to a reference database. It is especially useful for large metagenomic datasets
+- [MALT](http://ab.inf.uni-tuebingen.de/software/malt/) (MEGAN Alignment Tool) rapidly aligns DNA sequences to a reference database. It is especially useful for large metagenomic datasets
 - [MEGAN](http://ab.inf.uni-tuebingen.de/software/megan6/) is a multi-function software suite for analyzing metagenomic data
 - [sam2lca](https://github.com/maxibor/sam2lca) is a program performing reference sequence disambiguation for reads mapping to multiple reference sequences in a shotgun metagenomics sequencing dataset; it takes as input the common SAM sequence alignment format and applies the lowest common ancestor algorithm
 - [metaPhlAn3](https://huttenhower.sph.harvard.edu/metaphlan/) uses marker genes from reference genomes to profile microbial communities in metagenomic data
@@ -90,8 +92,8 @@ Many tools, programs, pipelines, and software suites are used in the analysis of
 
 **Visualization tools**
 - [IGV](https://software.broadinstitute.org/software/igv/) (Integrative Genomics Viewer) is a high-performance interactive tool for the visual exploration of genomic data
-- [Krona](https://github.com/marbl/Krona/wiki) is a visualization tool that allows hierarchical data to be explored through interactive, mulit-layered pie charts.It is especially useful for visualizing taxonomically assigned metagenomics data
-- [GrapeTree](https://github.com/achtman-lab/GrapeTree) is an interactive tree visualization program that supports manipulation of tree layout and metadata
+- [Krona](https://github.com/marbl/Krona/wiki) is a visualization tool that allows hierarchical data to be explored through interactive, multi-layered pie charts. It is especially useful for visualizing taxonomically assigned metagenomics data
+- [GrapeTree](https://github.com/achtman-lab/GrapeTree) is an interactive tree visualization program that supports the manipulation of tree layout and metadata
 
 ### Ancient Proteins
 
